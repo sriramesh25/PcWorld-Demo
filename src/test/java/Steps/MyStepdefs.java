@@ -70,7 +70,7 @@ public class MyStepdefs extends BaseUtil{
     @When("^I click remove to empty the Basket$")
     public void iClickRemoveToEmptyTheBasket() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-       base.Driver.findElement(By.xpath("//*[@id=\"product10169400\"]/table/tbody/tr[1]/th/div/div[2]/a")).click();
+       base.Driver.findElement(By.xpath("//*[@id=\"product10169400\"]/table/tbody/tr[1]/th/div/div/a")).click();
     }
 
     @And("^I search for \"([^\"]*)\" laptop$")
