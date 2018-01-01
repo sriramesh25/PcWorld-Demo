@@ -1,0 +1,19 @@
+[33mcommit 0be40a39e1975c868bc900d50c09d5e8a2eefc52[m
+Author: sriyan <njramesh6@yahoo.co.uk>
+Date:   Sun Dec 31 23:01:02 2017 +0000
+
+    Demo File
+
+[1mdiff --git a/src/test/java/Steps/MyStepdefs.java b/src/test/java/Steps/MyStepdefs.java[m
+[1mindex 753374e..b818562 100644[m
+[1m--- a/src/test/java/Steps/MyStepdefs.java[m
+[1m+++ b/src/test/java/Steps/MyStepdefs.java[m
+[36m@@ -70,7 +70,7 @@[m [mpublic class MyStepdefs extends BaseUtil{[m
+     @When("^I click remove to empty the Basket$")[m
+     public void iClickRemoveToEmptyTheBasket() throws Throwable {[m
+         // Write code here that turns the phrase above into concrete actions[m
+[31m-       base.Driver.findElement(By.xpath("//*[@id=\"product10169400\"]/table/tbody/tr[1]/th/div/div[2]/a")).click();[m
+[32m+[m[32m       base.Driver.findElement(By.xpath("//*[@id=\"product10169400\"]/table/tbody/tr[1]/th/div/div/a")).click();[m
+     }[m
+ [m
+     @And("^I search for \"([^\"]*)\" laptop$")[m
