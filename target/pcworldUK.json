@@ -1,0 +1,220 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7478862155,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.InitializeTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Add Product to Bag",
+        "description": "",
+        "id": "e-commerce-application;add-product-to-bag",
+        "after": [
+          {
+            "result": {
+              "duration": 189487,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16362874333,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Iam in the PcWorld Home Page",
+            "match": {
+              "location": "MyStepdefs.iamInThePcWorldHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6866607183,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I search for \"lenovo\"laptop",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lenovo",
+                  "offset": 14
+                }
+              ],
+              "location": "MyStepdefs.iSearchForLaptop(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8987277000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I select the Laptop from the List",
+            "match": {
+              "location": "MyStepdefs.iSelectTheLaptopFromTheList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2014395019,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click Add to Basket the item updated on the Basket",
+            "match": {
+              "location": "MyStepdefs.iClickAddToBasketTheItemUpdatedOnTheBasket()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5003823530,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.InitializeTest()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Remove Item from the Basket",
+        "description": "",
+        "id": "e-commerce-application;remove-item-from-the-basket",
+        "after": [
+          {
+            "result": {
+              "duration": 303265,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12840531556,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Iam in the PcWorld",
+            "match": {
+              "location": "MyStepdefs.iamInThePcWorld()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6351381929,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I search for \"Lenovo\" laptop",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Lenovo",
+                  "offset": 14
+                }
+              ],
+              "location": "MyStepdefs.iSearchForLaptops(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11669456502,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I select item from the list",
+            "match": {
+              "location": "MyStepdefs.iSelectItemFromTheList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7258359667,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I add item to the shopping Basket",
+            "match": {
+              "location": "MyStepdefs.iAddItemToTheShoppingBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37046739542,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Ima in the Basket",
+            "match": {
+              "location": "MyStepdefs.imaInTheBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1987540485,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click remove to empty the Basket",
+            "match": {
+              "location": "MyStepdefs.iClickRemoveToEmptyTheBasket()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "E-Commerce Application",
+    "description": "",
+    "id": "e-commerce-application",
+    "keyword": "Feature",
+    "uri": "feature.feature"
+  }
+]
