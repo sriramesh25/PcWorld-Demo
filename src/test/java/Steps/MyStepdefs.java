@@ -31,19 +31,20 @@ public class MyStepdefs extends BaseUtil{
         // Write code here that turns the phrase above into concrete actions
 
         WebElement element=base.Driver.findElement(By.name("search-field"));
+        element.clear();
         element.sendKeys(querry);
 
         base.Driver.findElement(By.id("search_bttn")).submit();
         
 
-        // base.Driver.findElement(By.xpath("//*[@id=\"product10169400\"]/div[1]/div/div[1]/a[1]")).click();
+        // base.Driver.findElement(By.xpath("//*[@id="product10169170"]/div[2]/header/a")).click();
 
     }
 
     @And("^I select the Laptop from the List$")
     public void iSelectTheLaptopFromTheList() throws Throwable {
         // Copy Image Link-right click on the link you want to select and you will get option copy Xpath
-        base.Driver.findElement(By.xpath("//*[@id=\"product10169400\"]/div[1]/div/div[1]/a[1]")).click();
+        base.Driver.findElement(By.xpath("//*[@id=\"product10169170\"]/div[2]/header/a")).click();
     }
 
 
@@ -70,7 +71,7 @@ public class MyStepdefs extends BaseUtil{
     @When("^I click remove to empty the Basket$")
     public void iClickRemoveToEmptyTheBasket() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-       base.Driver.findElement(By.xpath("//*[@id=\"product10169400\"]/table/tbody/tr[1]/th/div/div/a")).click();
+       base.Driver.findElement(By.xpath("//*[@id=\"product10169170\"]/table/tbody/tr[1]/th/div/div[2]/a")).click();
     }
 
     @And("^I search for \"([^\"]*)\" laptop$")
@@ -91,6 +92,6 @@ public class MyStepdefs extends BaseUtil{
     @And("^I select item from the list$")
     public void iSelectItemFromTheList() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        base.Driver.findElement(By.xpath("//*[@id=\"product10169400\"]/div[1]/div/div[1]/a[1]")).click();
+        base.Driver.findElement(By.xpath("//*[@id=\"product10169170\"]/div[2]/header/a")).click();
     }
 }
